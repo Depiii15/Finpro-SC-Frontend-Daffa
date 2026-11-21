@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeri foto Raja Ampat dan checklist persiapan sebelum berangkat.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏝️%3C/text%3E%3C/svg%3E">
+    <title>Galeri | JelajahIndonesia Raja Ampat</title>
+    <link rel="stylesheet" href="Source Code_Daffa.css">
+</head>
+<body>
+    <header id="beranda" class="site-header">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <h2><a href="index.html" class="brand">Jelajah<span>Indonesia</span></a></h2>
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" class="nav-btn" aria-label="Aktifkan mode malam">🌙</button>
+                <button type="button" id="menu-toggle" class="nav-btn" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-menu">☰</button>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="Source%20Code_Daffa.html">Raja Ampat</a></li>
+                <li><a href="galeri.html" aria-current="page">Galeri</a></li>
+            </ul>
+        </nav>
+        <nav class="subnav" aria-label="Bagian di halaman Galeri">
+            <ul>
+                <li><a href="#galeri">Foto Destinasi</a></li>
+                <li><a href="#persiapan">Persiapan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="eyebrow">GALERI &amp; PERSIAPAN</p>
+            <h1>Galeri Raja Ampat</h1>
+            <p>Lihat sekilas keindahan Raja Ampat, lalu siapkan perlengkapan sebelum berangkat.</p>
+        </section>
+
+        <section class="section gallery" id="galeri">
+            <p class="eyebrow">FOTO DESTINASI</p>
+            <h2>Keindahan Raja Ampat</h2>
+            <p class="note">Klik gambar untuk memperbesar.</p>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="Galeri Raja Ampat.jpg" alt="Pemandangan laut biru dan pulau tropis">
+                    <figcaption>Raja Ampat</figcaption>
+                </figure>
+                <figure>
+                    <img src="Galeri Pulau Arborek.jpg" alt="Pemandangan bawah laut dengan ikan dan karang">
+                    <figcaption>Pulau Arborek</figcaption>
+                </figure>
+                <figure>
+                    <img src="Galeri Pulau Piaynemo.jpg" alt="Pantai tropis dengan air laut biru">
+                    <figcaption>Piaynemo</figcaption>
+                </figure>
+                <figure>
+                    <img src="Galeri Pulau Wayag.jpg" alt="Terumbu karang dan kehidupan laut">
+                    <figcaption>Kepulauan Wayag</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section info checklist-section" id="persiapan">
+            <p class="eyebrow">SEBELUM BERANGKAT</p>
+            <h2>Checklist Persiapan</h2>
+            <p class="note">Centang barang yang sudah siap, atau tambah dan hapus sesuai kebutuhanmu.</p>
+            <form id="checklist-form" class="checklist-form">
+                <label for="checklist-input" class="visually-hidden">Tambah barang persiapan</label>
+                <input type="text" id="checklist-input" placeholder="Tambah barang lain, misalnya kamera tahan air" maxlength="60" autocomplete="off">
+                <button type="submit">Tambah</button>
+            </form>
+            <p id="checklist-message" class="checklist-message" role="status" aria-live="polite"></p>
+            <ul class="checklist" id="checklist">
+                <li><label><input type="checkbox"> Tabir surya dan topi</label></li>
+                <li><label><input type="checkbox"> Perlengkapan snorkeling</label></li>
+                <li><label><input type="checkbox"> Pakaian ganti dan handuk</label></li>
+                <li><label><input type="checkbox"> Obat pribadi dan P3K</label></li>
+                <li><label><input type="checkbox"> Uang tunai dan kartu identitas</label></li>
+            </ul>
+            <p id="checklist-progress" class="checklist-progress" role="status" aria-live="polite">0 dari 5 barang siap</p>
+            <button type="button" id="checklist-reset" class="checklist-reset">Kembalikan ke daftar awal</button>
+            <a href="Source%20Code_Daffa.html#pemesanan">Lanjut ke form pemesanan →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 JelajahIndonesia | Dibuat oleh Daffa Eka</p>
+        <p>Wisata Alam Indonesia · Instagram:
+            <a href="https://www.instagram.com/dapaeka15?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@dapaeka15</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

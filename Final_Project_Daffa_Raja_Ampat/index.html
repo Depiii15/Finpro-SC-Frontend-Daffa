@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JelajahIndonesia: kumpulan destinasi wisata alam Indonesia, dimulai dari Raja Ampat.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏝️%3C/text%3E%3C/svg%3E">
+    <title>JelajahIndonesia | Wisata Alam Indonesia</title>
+    <link rel="stylesheet" href="Source Code_Daffa.css">
+</head>
+<body>
+    <header id="beranda" class="site-header">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <h2><a href="index.html" class="brand">Jelajah<span>Indonesia</span></a></h2>
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" class="nav-btn" aria-label="Aktifkan mode malam">🌙</button>
+                <button type="button" id="menu-toggle" class="nav-btn" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-menu">☰</button>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html" aria-current="page">Beranda</a></li>
+                <li><a href="Source%20Code_Daffa.html">Raja Ampat</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+        </nav>
+        <nav class="subnav" aria-label="Bagian di halaman Beranda">
+            <ul>
+                <li><a href="#destinasi">Destinasi</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="eyebrow">SELAMAT DATANG</p>
+            <h1>Jelajahi Keindahan Indonesia</h1>
+            <p>Temukan destinasi wisata alam Indonesia, lengkap dengan informasi singkat, aktivitas seru, dan tips perjalanan.</p>        </section>
+
+        <section class="section destinations" id="destinasi">
+            <p class="eyebrow">PILIH DESTINASIMU</p>
+            <h2>Destinasi Wisata</h2>
+            <p class="note">Saat ini Raja Ampat sudah bisa dijelajahi. Destinasi lainnya segera hadir.</p>
+
+            <form class="search-box" role="search" id="dest-search-form">
+                <label for="dest-search" class="visually-hidden">Cari destinasi</label>
+                <input type="search" id="dest-search" placeholder="Cari destinasi atau provinsi..." autocomplete="off">
+            </form>
+            <p id="dest-count" class="dest-count" role="status" aria-live="polite"></p>
+
+            <div class="dest-grid" id="dest-grid">
+                <article class="dest-card is-available">
+                    <div class="dest-media" role="img" aria-label="Pemandangan Raja Ampat" style="--img: url('Raja Ampat.jpg')"></div>
+                    <span class="dest-badge available">Tersedia</span>
+                    <div class="dest-body">
+                        <p class="dest-region">Papua Barat Daya</p>
+                        <h3>Raja Ampat</h3>
+                        <p>Gugusan pulau karang dan surga bawah laut Indonesia.</p>
+                        <a class="dest-link" href="Source%20Code_Daffa.html">Lihat destinasi →</a>
+                    </div>
+                </article>
+
+                <article class="dest-card is-soon">
+                    <div class="dest-media" role="img" aria-label="Pemandangan Danau Toba" style="--img: url('Danau Toba.jpg')"></div>
+                    <span class="dest-badge">Segera hadir</span>
+                    <div class="dest-body">
+                        <p class="dest-region">Sumatera Utara</p>
+                        <h3>Danau Toba</h3>
+                        <p>Danau vulkanik besar dengan Pulau Samosir di tengahnya.</p>
+                        <button type="button" class="dest-link soon">Segera hadir</button>
+                    </div>
+                </article>
+
+                <article class="dest-card is-soon">
+                    <div class="dest-media" role="img" aria-label="Pemandangan Gunung Bromo" style="--img: url('Gunung Bromo.jpg')"></div>
+                    <span class="dest-badge">Segera hadir</span>
+                    <div class="dest-body">
+                        <p class="dest-region">Jawa Timur</p>
+                        <h3>Gunung Bromo</h3>
+                        <p>Lautan pasir dan pemandangan matahari terbit yang terkenal.</p>
+                        <button type="button" class="dest-link soon">Segera hadir</button>
+                    </div>
+                </article>
+
+                <article class="dest-card is-soon">
+                    <div class="dest-media" role="img" aria-label="Pemandangan Pantai Kuta" style="--img: url('Pantai Kuta.jpg')"></div>
+                    <span class="dest-badge">Segera hadir</span>
+                    <div class="dest-body">
+                        <p class="dest-region">Bali</p>
+                        <h3>Pantai Kuta</h3>
+                        <p>Pantai populer untuk bermain ombak dan menikmati senja.</p>
+                        <button type="button" class="dest-link soon">Segera hadir</button>
+                    </div>
+                </article>
+
+                <article class="dest-card is-soon">
+                    <div class="dest-media" role="img" aria-label="Candi Borobudur" style="--img: url('Candi Borobudur.jpg')"></div>
+                    <span class="dest-badge">Segera hadir</span>
+                    <div class="dest-body">
+                        <p class="dest-region">Jawa Tengah</p>
+                        <h3>Candi Borobudur</h3>
+                        <p>Candi Buddha megah yang menjadi warisan sejarah dunia.</p>
+                        <button type="button" class="dest-link soon">Segera hadir</button>
+                    </div>
+                </article>
+
+                <article class="dest-card is-soon">
+                    <div class="dest-media" role="img" aria-label="Pemandangan Labuan Bajo" style="--img: url('Labuan Bajo.jpg')"></div>
+                    <span class="dest-badge">Segera hadir</span>
+                    <div class="dest-body">
+                        <p class="dest-region">Nusa Tenggara Timur</p>
+                        <h3>Labuan Bajo</h3>
+                        <p>Gerbang menuju Taman Nasional Komodo dan pulau-pulau sekitarnya.</p>
+                        <button type="button" class="dest-link soon">Segera hadir</button>
+                    </div>
+                </article>
+            </div>
+
+            <p id="dest-empty" class="dest-empty" hidden>Destinasi tidak ditemukan. Coba kata kunci lain.</p>
+        </section>
+
+        <section class="section info about-site" id="tentang">
+            <p class="eyebrow">TENTANG SITUS</p>
+            <h2>Kenapa JelajahIndonesia?</h2>
+            <div class="activity-grid">
+                <article class="activity-card">
+                    <div class="activity-icon">🗺️</div>
+                    <h3>Banyak Destinasi</h3>
+                    <p>Kumpulan destinasi wisata alam Indonesia yang akan terus bertambah.</p>
+                </article>
+                <article class="activity-card">
+                    <div class="activity-icon">📋</div>
+                    <h3>Informasi Ringkas</h3>
+                    <p>Lokasi, aktivitas, dan tips perjalanan disusun singkat dan mudah dibaca.</p>
+                </article>
+                <article class="activity-card">
+                    <div class="activity-icon">🎒</div>
+                    <h3>Siap Berangkat</h3>
+                    <p>Pakai checklist persiapan untuk memastikan semua barang terbawa.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 JelajahIndonesia | Dibuat oleh Daffa Eka</p>
+        <p>Wisata Alam Indonesia · Instagram:
+            <a href="https://www.instagram.com/dapaeka15?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@dapaeka15</a>
+        </p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
